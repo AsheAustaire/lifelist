@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- DATA -->
+    <script>
+      const PRIORITIES = [
+        {
+          "title": "Yoga",
+          "value": 0,
+          "contract": "Do yoga in the morning and at night",
+          "dateCreated": "May 5th, 2019"
+        },
+        {
+          "title": "Web Development",
+          "value": 0,
+          "contract": "Do yoga in the morning and at night",
+          "dateCreated": "May 5th, 2019"
+        },
+        {
+          "title": "Family",
+          "value": 0,
+          "contract": "Do yoga in the morning and at night",
+          "dateCreated": "May 5th, 2019"
+        },
+        {
+          "title": "Friends",
+          "value": 0,
+          "contract": "Do yoga in the morning and at night",
+          "dateCreated": "May 5th, 2019"
+        },
+        {
+          "title": "Work",
+          "value": 0,
+          "contract": "Do yoga in the morning and at night",
+          "dateCreated": "May 5th, 2019"
+        },
+        {
+          "title": "This",
+          "value": 0,
+          "contract": "Do yoga in the morning and at night",
+          "dateCreated": "May 5th, 2019"
+        },
+        {
+          "title": "That",
+          "value": 0,
+          "contract": "Do yoga in the morning and at night",
+          "dateCreated": "May 5th, 2019"
+        },
+      ]
+    </script>
+    <style>
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed, 
+      figure, figcaption, footer, header, hgroup, 
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article, aside, details, figcaption, figure, 
+      footer, header, hgroup, menu, nav, section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol, ul {
+        list-style: none;
+      }
+      blockquote, q {
+        quotes: none;
+      }
+      blockquote:before, blockquote:after,
+      q:before, q:after {
+        content: '';
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+    </style>
+    <!-- CSS -->
+    <style>
+      
+      html, body {
+        width: 100%;
+        height: 100%;
+      }
+
+      .main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+
+      .main section {
+        width: 50%;
+        height: 100%;
+      }
+
+      .main section:nth-child(2) {
+        background-color: #003366;
+        z-index: 100;
+      }
+
+      .list {
+        width: 100%;
+        padding: 0px 120px
+      }
+
+      .list-item {
+
+        margin: 20px 0px;
+        padding: 20px 0px;
+
+        font-size: 40px;
+        font-family: "Open Sans"; 
+        font-weight: bolder;
+      }
+
+      .list-item:hover {
+        border-bottom: 1px solid hsla(0, 0%, 43%, .09);
+      }
+
+      .gradient {
+        position: fixed;
+        bottom: 0px;
+
+        width: 100%;
+        height: 50px;
+        background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 255, 255, 1));
+      }
+
+      .logo {
+        margin: 60px 0px 0px 60px;
+
+        font-size: 40px;
+        font-family: "Open Sans";
+        font-weight: 900;
+        color: #DBDBDB;
+      }
+
+      .logo-line {
+        width: 250px;
+        margin: 30px 60px;
+
+        border-top: 1px solid hsla(0, 0%, 43%, .09);
+        }
+
+    </style>
+
+  </head>
+  <body>  
+    <article class="main">
+      <section>
+        <div class="logo-wrapper">
+          <h1 class="logo">LIFELIST</h1>
+          <hr class="logo-line"/>
+        </div>
+        <div>
+          <div id="list" class="list">
+            
+          </div>
+          <div class="gradient"></div>
+        </div>
+      </section>
+
+      <section>
+
+      </section>
+    </article>
+    <script>
+      
+      // DOM INTERFACE
+      const LIST = document.getElementById("list")
+      
+      for(let i = 0; i < PRIORITIES.length; i++) {
+        LIST.innerHTML += `<h1 class="list-item">${PRIORITIES[i].title}</h1>`  
+      }
+
+    </script>
+  </body>
+</html>
