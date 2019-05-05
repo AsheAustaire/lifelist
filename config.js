@@ -41,4 +41,10 @@ const PRIORITIES = [
     "contract": "Do yoga in the morning and at night",
     "dateCreated": "May 5th, 2019"
   },
+  {
+    "title": "That",
+    "value": 0,
+    "contract": "Do yoga in the morning and at night",
+    "dateCreated": "May 5th, 2019"
+  },
 ]    
