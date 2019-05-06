@@ -33,8 +33,10 @@
       const LIST = document.getElementById("list")
       
       for(let i = 0; i < PRIORITIES.length; i++) {
-        LIST.innerHTML += `<h1 class="list-item">${PRIORITIES[i].title}</h1>`  
+        LIST.innerHTML += `<h1 class="list-item" id="listItem${i}">${PRIORITIES[i].title}</h1>`  
       }
+
+      
 
     </script>
   </body>
